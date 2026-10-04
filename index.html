@@ -24,30 +24,46 @@
         </div>
 
         <div class="tabs">
-            <button class="tab active" onclick="showTab('film')">Film</button>
+            <button class="tab active" onclick="showTab('showreel')">Showreel</button>
+            <button class="tab " onclick="showTab('film')">Projects</button>
             <button class="tab" onclick="showTab('dj')">DJ</button>
+            <button class="tab" onclick="showTab('contact')">Contact</button>
         </div>
     </section>
 
     <!-- Main Body -->
     <main>
+
+        <!-- Showreel Section -->
+         <div id="showreel" class="content-section active project">
+            <!-- https://youtu.be/Aj2TbbXhRAE?is=eNiJQ0PCiGZi4lae -->
+
+            <!-- width="560" height="315" -->
+            <iframe 
+            src="https://www.youtube.com/embed/Aj2TbbXhRAE?si=S99N1YdwuLKvpBjG" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+         </div>
+
         <!-- Film Section -->
-        <div id="film" class="content-section active">
+        <div id="film" class="content-section">
             <div class="projects">
 
                 <!-- Project 1: It's more than just bricks and mortar -->
                 <div class="project">
                     <h3>It's more than just bricks and mortar (2025)</h3>
-                    <p class="project-description">Documentary short film.</p>
+                    <p class="project-description">Documentary short exploring Walthamstow Trades hall's dancing community and it's impact on working mens clubs today. Screened at Adra Screendance festival, Frame Rush Film festival, Off beat folk film festival and awarded to the honours list at Women X festival.</p>
 
                     <div class="slideshow">
                         <div class="slideshow-container">
                             <div class="slide active">
                                 <img src="Assets/It's more than just bricks and mortar _main.jpeg" alt="It's more than just bricks and mortar">
                             </div>
-                            <div class="slide">
+                            <!-- <div class="slide">
                                 <img src="Assets/It's more than just bricks and mortar _1.jpeg" alt="It's more than just bricks and mortar">
-                            </div>
+                            </div> -->
                             <div class="slide">
                                 <img src="Assets/It's more than just bricks and mortar _2.jpeg" alt="It's more than just bricks and mortar">
                             </div>
@@ -57,9 +73,9 @@
                             <div class="slide">
                                 <img src="Assets/It's more than just bricks and mortar _4.jpeg" alt="It's more than just bricks and mortar">
                             </div>
-                            <div class="slide">
+                            <!-- <div class="slide">
                                 <img src="Assets/It's more than just bricks and mortar _5.jpeg" alt="It's more than just bricks and mortar">
-                            </div>
+                            </div> -->
 
                             <div class="slideshow-controls">
                                 <button class="control-btn" onclick="changeSlide(0, -1)">&#10094;</button>
@@ -81,7 +97,7 @@
                 <!-- Project 2: A local place for local people -->
                 <div class="project">
                     <h3>A local place for local people (2025)</h3>
-                    <p class="project-description">Photographer and Filmmaker of touring exhibition series.</p>
+                    <p class="project-description">Photographer and Filmmaker of touring exhibition series which explores themes of identity within rural communities.</p>
                     <p class="project-description">
                         <a href="https://youtube.com/playlist?list=PLKdVuWgEbwWw&si=3KhOcfUSU0G9OUzR" target="_blank">View on YouTube</a>
                     </p>
@@ -89,11 +105,11 @@
                     <div class="slideshow">
                         <div class="slideshow-container">
                             <div class="slide active">
-                                <img src="Assets/A local place for local people_main.jpeg" alt="A local place for local people">
+                                <img src="Assets/A local place for local people_4.jpeg" alt="A local place for local people">
                             </div>
-                            <div class="slide">
+                            <!-- <div class="slide">
                                 <img src="Assets/A local place for local people_1.jpeg" alt="A local place for local people">
-                            </div>
+                            </div> -->
                             <div class="slide">
                                 <img src="Assets/A local place for local people_2.jpeg" alt="A local place for local people">
                             </div>
@@ -101,7 +117,7 @@
                                 <img src="Assets/A local place for local people_3.jpeg" alt="A local place for local people">
                             </div>
                             <div class="slide">
-                                <img src="Assets/A local place for local people_4.jpeg" alt="A local place for local people">
+                                <img src="Assets/A local place for local people_main.jpeg" alt="A local place for local people">
                             </div>
 
                             <div class="slideshow-controls">
@@ -123,7 +139,7 @@
                 <!-- Project 3: The Big Night Out -->
                 <div class="project">
                     <h3>The Big Night Out (2026)</h3>
-                    <p class="project-description">Director of narrative short.</p>
+                    <p class="project-description">Director of community led short film, exploring disabled nightlife in rural Abergavenny. Produced by Happy Dragons Theatre. <br>Release date TBC.</p>
 
                     <div class="slideshow">
                         <div class="slideshow-container">
@@ -131,19 +147,19 @@
                                 <img src="Assets/The Big Night Out_Main.jpeg" alt="The Big Night Out">
                             </div>
                             <div class="slide">
-                                <img src="Assets/The Big Night Out_1.jpeg" alt="The Big Night Out">
+                                <img src="Assets/Happy Dradons Big Night Out.jpeg" alt="The Big Night Out">
                             </div>
                             <div class="slide">
-                                <img src="Assets/The Big Night Out_2.jpeg" alt="The Big Night Out">
+                                <img src="Assets/The Big Night Out_1.jpeg" alt="The Big Night Out">
                             </div>
+                            <!-- <div class="slide">
+                                <img src="Assets/The Big Night Out_2.jpeg" alt="The Big Night Out">
+                            </div> -->
                             <div class="slide">
                                 <img src="Assets/The Big Night Out_3.jpeg" alt="The Big Night Out">
                             </div>
                             <div class="slide">
                                 <img src="Assets/The Big Night Out_4.jpeg" alt="The Big Night Out">
-                            </div>
-                            <div class="slide">
-                                <img src="Assets/Happy Dradons Big Night Out.jpeg" alt="The Big Night Out">
                             </div>
 
                             <div class="slideshow-controls">
@@ -166,15 +182,15 @@
                 <!-- Project 4: Paraorchestra R&D -->
                 <div class="project">
                     <h3>Paraorchestra R&D with Aisha Naamani & Oliver Vibrans (2026)</h3>
-                    <p class="project-description">Research and development project.</p>
+                    <p class="project-description">Filmmaker for Research and Development project.</p>
 
                     <div class="slideshow">
                         <div class="slideshow-container">
                             <div class="slide active">
-                                <img src="Assets/Paraorchestra R&D with Aisha Naamani & Oliver Vibrans_Main.jpeg" alt="Paraorchestra R&D">
+                                <img src="Assets/Paraorchestra R&D with Aisha Naamani & Oliver Vibrans _1.jpeg" alt="Paraorchestra R&D">
                             </div>
                             <div class="slide">
-                                <img src="Assets/Paraorchestra R&D with Aisha Naamani & Oliver Vibrans _1.jpeg" alt="Paraorchestra R&D">
+                                <img src="Assets/Paraorchestra R&D with Aisha Naamani & Oliver Vibrans_Main.jpeg" alt="Paraorchestra R&D">
                             </div>
 
                             <div class="slideshow-controls">
@@ -193,7 +209,8 @@
                 <!-- Project 5: ArtsCross, The Place -->
                 <div class="project">
                     <h3>ArtsCross, The Place (2026)</h3>
-                    <p class="project-description">Arts project at The Place.</p>
+                    <p class="project-description">Filmmaker for international collaboration project with 8 choreographers and 28 dancers from Beijing, Hong Kong, Taipei and London.</p>
+                    <p><a href=" https://rescen.net/blog10/">Project link</a></p>
 
                     <div class="slideshow">
                         <div class="slideshow-container">
@@ -243,6 +260,16 @@
                 <p>DJ projects will be added here.</p>
             </div>
         </div>
+        
+        <!-- Contact Section -->
+        <div id="contact" class="content-section">
+            <div class="empty-state">
+                <h2>Becky Johnson</h2>
+                <p>Email: bjohnsoncreative@outlook.com</p>
+                <p>Instagram: intagram.com/bjognsoncreative</p>
+                <p>YouTube: youtube.com/@b.johnsoncreative</p>
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->
@@ -250,59 +277,6 @@
         <p>&copy; 2026 Becky Johnson</p>
     </footer>
 
-    <script>
-        // Tab switching
-        function showTab(tabName) {
-            // Hide all content sections
-            const sections = document.querySelectorAll('.content-section');
-            sections.forEach(section => section.classList.remove('active'));
-
-            // Remove active class from all tabs
-            const tabs = document.querySelectorAll('.tab');
-            tabs.forEach(tab => tab.classList.remove('active'));
-
-            // Show selected section
-            document.getElementById(tabName).classList.add('active');
-
-            // Highlight active tab
-            event.target.classList.add('active');
-        }
-
-        // Slideshow functionality
-        function changeSlide(projectIndex, direction) {
-            const project = document.querySelectorAll('.project')[projectIndex];
-            const slides = project.querySelectorAll('.slide');
-            const dots = project.querySelectorAll('.dot');
-
-            let currentIndex = 0;
-            slides.forEach((slide, index) => {
-                if (slide.classList.contains('active')) {
-                    currentIndex = index;
-                }
-            });
-
-            slides[currentIndex].classList.remove('active');
-            dots[currentIndex].classList.remove('active');
-
-            let newIndex = currentIndex + direction;
-            if (newIndex >= slides.length) newIndex = 0;
-            if (newIndex < 0) newIndex = slides.length - 1;
-
-            slides[newIndex].classList.add('active');
-            dots[newIndex].classList.add('active');
-        }
-
-        function goToSlide(projectIndex, slideIndex) {
-            const project = document.querySelectorAll('.project')[projectIndex];
-            const slides = project.querySelectorAll('.slide');
-            const dots = project.querySelectorAll('.dot');
-
-            slides.forEach(slide => slide.classList.remove('active'));
-            dots.forEach(dot => dot.classList.remove('active'));
-
-            slides[slideIndex].classList.add('active');
-            dots[slideIndex].classList.add('active');
-        }
-    </script>
+    <script src="./script.js"></script>
 </body>
 </html>
