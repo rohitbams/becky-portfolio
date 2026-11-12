@@ -1,5 +1,16 @@
 
-        // Tab switching
+        // Smooth scroll to section
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+
+        // Tab switching (legacy - keeping for now)
         function showTab(tabName) {
             // Hide all content sections
             const sections = document.querySelectorAll('.content-section');
@@ -31,6 +42,7 @@
 
             slides[currentIndex].classList.remove('active');
             dots[currentIndex].classList.remove('active');
+            dots[currentIndex].setAttribute('aria-selected', 'false');
 
             let newIndex = currentIndex + direction;
             if (newIndex >= slides.length) newIndex = 0;
@@ -38,6 +50,7 @@
 
             slides[newIndex].classList.add('active');
             dots[newIndex].classList.add('active');
+            dots[newIndex].setAttribute('aria-selected', 'true');
         }
 
         function goToSlide(projectIndex, slideIndex) {
@@ -46,8 +59,12 @@
             const dots = project.querySelectorAll('.dot');
 
             slides.forEach(slide => slide.classList.remove('active'));
-            dots.forEach(dot => dot.classList.remove('active'));
+            dots.forEach(dot => {
+                dot.classList.remove('active');
+                dot.setAttribute('aria-selected', 'false');
+            });
 
             slides[slideIndex].classList.add('active');
             dots[slideIndex].classList.add('active');
+            dots[slideIndex].setAttribute('aria-selected', 'true');
         }

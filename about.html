@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Becky Johnson</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation Header -->
+    <header class="page-header">
+        <div class="header-content">
+            <h1>Becky Johnson</h1>
+            <nav class="page-nav" aria-label="Main navigation">
+                <a href="index.html">Showreel</a>
+                <a href="about.html" class="active">About</a>
+                <a href="film.html">Film</a>
+                <a href="dj.html">DJ Work</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="page-content">
+        <!-- About Section -->
+        <section class="about-section">
+            <div class="about-content">
+                <div class="bio">
+                    <h2>About Me</h2>
+                    <p>Becky Johnson (she/they) is a community driven artist and producer who works within the film, arts and music sector. Becky's work seeks to increase exposure, access and connectivity between different communities and the arts. Their work explores portraiture and encounters, through documentation of people, places and experiences; most commonly in collaboration with other individuals or community groups. Becky's work often centres around documenting dance, especially in social settings. They seek to archive the connections on the dancefloor alongside the communities which host them.</p>
+                </div>
+                <div class="about-image">
+                    <img src="Assets/Becky.jpeg" alt="Becky Johnson">
+                </div>
+            </div>
+        </section>
+
+        <!-- Articles Section -->
+        <section class="articles-section" aria-labelledby="articles-heading">
+            <h2 id="articles-heading">Articles</h2>
+            <ul class="articles-list">
+                <li>
+                    <a href="https://getthechance.wales/2020/04/02/an-interview-with-wales-based-dance-artist-becky-johnson/" target="_blank" rel="noopener noreferrer"><strong>An interview with Wales-based dance artist Becky Johnson</strong></a>, Get The Chance, Guy O'Donnell, April 2, 2020
+                </li>
+                <li>
+                    <a href="https://danceartjournal.com/2026/10/05/reflecting-on-frame-rush-2026/" target="_blank" rel="noopener noreferrer"><strong>Reflecting on Frame Rush 2026 (It's more than just bricks and mortar review)</strong></a>, Dance Art Journal, October 5, 2026
+                </li>
+
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <h2>Get in Touch</h2>
+            <p class="contact-subtitle">Becky Johnson</p>
+
+            <form class="contact-form" action="#" method="POST">
+                <p class="form-note">* indicates required</p>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" id="firstName" name="firstName" required aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" id="lastName" name="lastName" required aria-required="true">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="occupation">Occupation</label>
+                    <input type="text" id="occupation" name="occupation">
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+
+            <div class="contact-links">
+                <p><a href="mailto:bjohnsoncreative@outlook.com" aria-label="Email Becky Johnson">bjohnsoncreative@outlook.com</a></p>
+                <p><a href="https://instagram.com/bjohnsoncreative" target="_blank" rel="noopener noreferrer" aria-label="Visit Becky Johnson on Instagram">Instagram</a></p>
+                <p><a href="https://youtube.com/@b.johnsoncreative" target="_blank" rel="noopener noreferrer" aria-label="Visit Becky Johnson on YouTube">YouTube</a></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Becky Johnson</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
